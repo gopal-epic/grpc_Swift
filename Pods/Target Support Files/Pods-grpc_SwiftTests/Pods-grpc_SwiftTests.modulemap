@@ -1,0 +1,6 @@
+framework module Pods_grpc_SwiftTests {
+  umbrella header "Pods-grpc_SwiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
