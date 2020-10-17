@@ -12,13 +12,21 @@ PODS:
     - BoringSSL-GRPC (= 0.0.4)
     - gRPC-Core/Interface (= 1.24.2)
   - gRPC-Core/Interface (1.24.2)
+  - Impressions (0.0.1):
+    - Impressions/Messages (= 0.0.1)
+    - Impressions/Services (= 0.0.1)
+  - Impressions/Messages (0.0.1):
+    - SwiftProtobuf
+  - Impressions/Services (0.0.1):
+    - Impressions/Messages
+    - SwiftGRPC
   - SwiftGRPC (0.11.0):
     - gRPC-Core (~> 1.24.1)
     - SwiftProtobuf (~> 1.7.0)
   - SwiftProtobuf (1.7.0)
 
 DEPENDENCIES:
-  - SwiftGRPC
+  - Impressions (from `.`)
 
 SPEC REPOS:
   trunk:
@@ -27,12 +35,17 @@ SPEC REPOS:
     - SwiftGRPC
     - SwiftProtobuf
 
+EXTERNAL SOURCES:
+  Impressions:
+    :path: "."
+
 SPEC CHECKSUMS:
   BoringSSL-GRPC: b8d2e9fca6d3870aec81ee7d583869caec2a6076
   gRPC-Core: 5ca379163f100dfbc55214942ab7d23423513a17
+  Impressions: b0d1b53505f41d149058a24bf392b4df20950ecf
   SwiftGRPC: daeb5abeec734ee2a09072aed3fca1c2341a4869
   SwiftProtobuf: 4fd9645e69b72cbae6ec8da5be0cdd20ca6565dd
 
-PODFILE CHECKSUM: a1901a62fe754b34cf1eb73e15d1f4ff8e6d1c19
+PODFILE CHECKSUM: bd729dc72b3de2c259ddea5d28c8e015cfafd69f
 
 COCOAPODS: 1.9.3

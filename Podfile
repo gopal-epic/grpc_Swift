@@ -6,8 +6,8 @@ target 'grpc_Swift' do
   use_frameworks!
 
   # Pods for grpc_Swift
-  pod 'SwiftGRPC'
-
+  pod 'Impressions', :path => '.', :inhibit_warnings => true
+  
   target 'grpc_SwiftTests' do
     inherit! :search_paths
     # Pods for testing
